@@ -5,7 +5,6 @@
   <groupId>upm</groupId>
   <artifactId>IWVG.SwC.Eneas</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
 
   <name>IWVG.SwC.Eneas</name>
   <url>http://maven.apache.org</url>
@@ -15,11 +14,10 @@
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+	<dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	    <version>4.11</version>
+	</dependency>
   </dependencies>
 </project>
