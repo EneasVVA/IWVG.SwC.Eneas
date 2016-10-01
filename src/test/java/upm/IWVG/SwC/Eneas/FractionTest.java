@@ -43,4 +43,15 @@ public class FractionTest extends TestCase {
 			assertEquals(2, fr.getDenominator());
 		}
 
+		@Test
+		public void testSubtraction(){
+	    	Fraction fraction = new Fraction(3,2);
+	    	assertEquals(new Fraction(1,2).decimal(), fraction.subtraction(new Fraction(2,2)).decimal(), 0.01);
+	    }
+
+		@Test
+		public void testSum(){
+	    	Fraction fraction = new Fraction(3,2);
+	    	assertEquals(new Fraction(5,2).decimal(), fraction.sum(new Fraction(2,2)).decimal(), 0.01);
+		}
 }

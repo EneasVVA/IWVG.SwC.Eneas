@@ -60,4 +60,17 @@ public class Fraction {
         return (double) numerator / denominator;
     }
     
+    public Fraction sum(Fraction f){
+		int numerator = (this.numerator*f.denominator) + (f.numerator*this.denominator);
+    	int denominator = this.denominator*f.denominator;
+
+    	return new Fraction(numerator, denominator);
+    }
+
+        public Fraction subtraction(Fraction f){
+		int numerator = (this.numerator*f.denominator) - (f.numerator*this.denominator);
+    	int denominator = this.denominator*f.denominator;
+
+    	return new Fraction(numerator, denominator);
+    }
 }
