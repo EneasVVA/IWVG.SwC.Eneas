@@ -31,8 +31,12 @@ public class UserTest {
    	 assertEquals("Eneas Macías", this.usuario.fullName());
    }
    
+    @Test
+    public void fullNameCapitalsTest() {
+	    User user = new User(1, "Abraham", "Lincoln");
+	    assertEquals("ABRAHAM LINCOLN", user.fullNameCapitals());
+    }
     
-
 	public User getUsuario() {
 		return usuario;
 	}
