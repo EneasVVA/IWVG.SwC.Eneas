@@ -46,10 +46,21 @@ public class PointTest extends TestCase {
     }
 
     @Test
+    public void testChangePoint() {
+        pt = new Point();
+        pt.changePoint(2, 4);
+        assertEquals(2,pt.getX());
+        assertEquals(4,pt.getY());
+        pt.changePoint(5, 6);
+        assertEquals(5,pt.getX());
+        assertEquals(6,pt.getY());
+        
+    }
+
+    @Test
     public void testTranslate() {
         this.pt.translateOrigin(new Point(1, 1));
         assertEquals(1, pt.getX());
         assertEquals(2, pt.getY());
     }
-
 }
