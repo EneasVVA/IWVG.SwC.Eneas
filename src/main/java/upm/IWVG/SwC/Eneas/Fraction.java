@@ -73,4 +73,11 @@ public class Fraction {
 
     	return new Fraction(numerator, denominator);
     }
+        
+    public Boolean isPropia(Fraction f){ 
+            boolean propia=false;
+            if (f.getNumerator()<f.getDenominator())
+                propia=true;
+            return propia;
+     }
 }
