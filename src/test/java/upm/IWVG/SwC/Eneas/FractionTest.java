@@ -54,4 +54,13 @@ public class FractionTest extends TestCase {
 	    	Fraction fraction = new Fraction(3,2);
 	    	assertEquals(new Fraction(5,2).decimal(), fraction.sum(new Fraction(2,2)).decimal(), 0.01);
 		}
+		
+		@Test
+        public void testIsPropia(){
+            Fraction fractionPropia = new Fraction(2,3);
+            assertTrue(fractionPropia.isPropia(fractionPropia));
+            Fraction fractionNotPropia = new Fraction(3,2);
+            assertFalse(fractionNotPropia.isPropia(fractionNotPropia));
+            
+        }
 }
