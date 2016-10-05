@@ -80,4 +80,11 @@ public class Fraction {
                 propia=true;
             return propia;
      }
+    
+    public boolean isEquivalentFraction(Fraction fraction) {
+    	/* Cross product method */
+    	int endproduct = numerator * fraction.getDenominator();
+    	int mediaproduct =	denominator * fraction.getNumerator();	
+    	return (endproduct == mediaproduct);
+    }
 }

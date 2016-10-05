@@ -63,4 +63,12 @@ public class FractionTest extends TestCase {
             assertFalse(fractionNotPropia.isPropia(fractionNotPropia));
             
         }
+		
+	    @Test
+	    public final void testIsEquivalentFraction() {
+	    	Fraction eqfraction = new Fraction(10,2);
+	    	assertTrue(fr.isEquivalentFraction(eqfraction));
+	    	Fraction noteqfraction = new Fraction(10,3);
+	    	assertFalse(fr.isEquivalentFraction(noteqfraction));
+	    }
 }
