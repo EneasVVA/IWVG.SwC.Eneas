@@ -60,4 +60,31 @@ public class Fraction {
         return (double) numerator / denominator;
     }
     
+    public Fraction sum(Fraction f){
+		int numerator = (this.numerator*f.denominator) + (f.numerator*this.denominator);
+    	int denominator = this.denominator*f.denominator;
+
+    	return new Fraction(numerator, denominator);
+    }
+
+        public Fraction subtraction(Fraction f){
+		int numerator = (this.numerator*f.denominator) - (f.numerator*this.denominator);
+    	int denominator = this.denominator*f.denominator;
+
+    	return new Fraction(numerator, denominator);
+    }
+        
+    public Boolean isPropia(Fraction f){ 
+            boolean propia=false;
+            if (f.getNumerator()<f.getDenominator())
+                propia=true;
+            return propia;
+     }
+    
+    public boolean isEquivalentFraction(Fraction fraction) {
+    	/* Cross product method */
+    	int endproduct = numerator * fraction.getDenominator();
+    	int mediaproduct =	denominator * fraction.getNumerator();	
+    	return (endproduct == mediaproduct);
+    }
 }

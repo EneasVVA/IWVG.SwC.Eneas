@@ -34,5 +34,13 @@ public class DecimalCollection {
         }
         return higher;
     }
+    
+    public double product() {
+    	double product = 1;
+        for (double item : this.collection) {
+            product *= item;
+        }
+        return product;
+    }
 
 }

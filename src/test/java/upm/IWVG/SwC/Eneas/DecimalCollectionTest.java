@@ -39,5 +39,10 @@ public class DecimalCollectionTest extends TestCase {
     public void testHigher() {
         assertEquals(3, this.dc.higher(), 10e-5);
     }
+    
+    @Test
+    public void testProduct() {
+        assertEquals(-12, this.dc.product(), 10e-5);
+    }
 
 }
